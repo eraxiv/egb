@@ -10,23 +10,6 @@ var gcsv =              __dirname +'/csv/g.csv'                         ;
 var append_flag =       { flags: 'w' }                                  ;
 var estream, gstream, c;
 
-
-/*
-
-csv will have duplicates
-to remove duplicates from csv
-
-awk '!a[$0]++' csv/e.csv > csv/r.csv
-awk '!a[$0]++' csv/g.csv > csv/h.csv
-
-head -n 50 csv/r.csv > csv/e.csv
-head -n 50 csv/h.csv > csv/g.csv
-mv csv/e.csv csv/r.csv
-mv csv/g.csv csv/h.csv
-
-*/
-
-
 var headers_train = ["id","date","g1_nick","g1_flag","g1_race","g1_points","g1_coef","g2_nick","g2_flag","g2_race","g2_points","g2_coef","nested","pid","game","tourn","outcome"];
 var headers_score = ["id","date","g1_nick","g1_flag","g1_race","g1_points","g1_coef","g2_nick","g2_flag","g2_race","g2_points","g2_coef","nested","pid","game","tourn"];
 
@@ -450,9 +433,9 @@ function ml() {
     var debug =         0                                           ;
     var timeoutsecs =   1 * 60000                                   ;
 
-    apikey = "NPCn//58b28w5iw0T/AMmmmPC5skC33bAKmPVttXLpDRGymFHDZ4I0rCmsWGzwnlVIp7fWZfsuqFubmjWiDEhw==";
-    workspace = "0360466b83b04998ab86ea69dbcec5bf";
-    services = "5d951bca63824cfe9c9d88fe67633e31";
+    apikey = "[apikey]";
+    workspace = "[workspace]";
+    services = "[services]";
     score = "jobs";
 
     payload = { 
