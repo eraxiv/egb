@@ -1,0 +1,27 @@
+{
+  "name": "egb",
+  "version": "0.0.1",
+  "description": "Scrape EGB.com and run machine learning to determine outcomes",
+  "main": "egb.js",
+  "scripts": {
+    "test": "node egb.js g"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eraxiv/egb.git"
+  },
+  "dependencies" : {
+      "mongoq" : "*",
+      "nice-json2csv" : "*"
+  },  
+  "keywords": [
+    "egb",
+    "scrape",
+    "ml"
+  ],
+  "author": "eraxiv",
+  "license": "mit",
+  "bugs": {
+    "url": "https://github.com/eraxiv/egb/issues"
+  }
+}
