@@ -442,7 +442,7 @@ function ml() {
         "GlobalParameters": {}, 
         "Outputs": { 
             "res": { 
-                "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=mystorageacct;AccountKey=Dx9WbMIThAvXRQWap/aLnxT9LV5txxw==", 
+                "ConnectionString": "[connectionstring]", 
                 "RelativeLocation": "mycontainer/resresults.csv" 
             } 
         } 
